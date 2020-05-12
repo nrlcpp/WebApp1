@@ -10,6 +10,8 @@ namespace WebApp1.Models
     {
         public long Id { get; set; }
         public string FirstName { get; set; }
+        [Required]
+        [MaxLength(3)]
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public float Weight { get; set; }
